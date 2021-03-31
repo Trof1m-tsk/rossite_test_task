@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=d62f68f8-6fed-4833-bc4a-1aec6c23b5dd" type="text/javascript"></script>
+    <script src="./js/polyline_animation.min.js" type="text/javascript"></script>
+    <script src="./js/script.min.js" defer></script>
+
+    <title>Россайт тестовое задание</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <button class="header__show_menu_btn">
+            <span></span>
+        </button>
+        <form class="header__search">
+            <input class="header__search_input" placeholder="Что вы хотите найти?" type="text" name="search_input" id="search_input">
+            <button class="header__search_btn">
+                <img src="./img/search.png" alt="search">
+            </button>
+        </form>
+        <nav class="header__menu">
+            <ul class="header__menu_list">
+                <li class="header__menu_item"><a class="header__text" href="#">Главная</a></li>
+                <li class="header__menu_item"><a class="header__text" href="#">Документы</a></li>
+                <li class="header__menu_item"><a class="header__text" href="#">Доставка</a></li>
+                <li class="header__menu_item"><a class="header__text" href="#">О компании</a></li>
+                <li class="header__menu_item"><a class="header__text" href="#">Потфолио</a></li>
+                <li class="header__menu_item"><a class="header__text" href="#">Новости</a></li>
+            </ul>
+        </nav>
+        <div class="header__langs">
+            <button class="header__lang header__lang--active">Ru</button>
+            <button class="header__lang">En</button>
+            <button class="header__lang">De</button>
+        </div>
+        <div class="header__phone">
+            <a class="header__green" href="tel:+78126290356">+7 (812) 629-03-56</a>
+        </div>
+        <div class="header__contacts">
+            <a class="header__text2" href="#">Контакты</a>
+        </div>
+        <div class="header__production">
+            <a class="header__text2" href="#">Продукция</a>
+        </div>
+        <div class="header__email">
+            <a class="header__green" href="mailto:info@sparta-term.com">info@sparta-term.com</a>
+        </div>
+    </header>
+    <main>
+        <div class="map_container">
+            <div id="map"></div>
+        </div>
+    </main>
+</body>
+</html>
